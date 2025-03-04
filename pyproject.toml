@@ -1,0 +1,18 @@
+[project]
+name = "spark-etl-pipeline"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "magnetoverine",email = "magnetoverine@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas (>=2.2.3,<3.0.0)",
+    "pyyaml (>=6.0.2,<7.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

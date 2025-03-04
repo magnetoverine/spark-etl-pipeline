@@ -1,0 +1,14 @@
+etl:
+  extract:
+    input_files:
+      - "/Users/abhisheklucky/PycharmProjects/spark-etl-pipeline/spark_etl_pipeline/data/micro_user.csv"
+      - "/Users/abhisheklucky/PycharmProjects/spark-etl-pipeline/spark_etl_pipeline/data/stagnant_data.csv"
+  transform:
+    drop_na: true
+    filter:
+      column: "age"
+      min_value: 18
+    rename_columns:
+      name: "full_name"
+  load:
+    output_file: "/Users/abhisheklucky/PycharmProjects/spark-etl-pipeline/spark_etl_pipeline/data/output.csv"
