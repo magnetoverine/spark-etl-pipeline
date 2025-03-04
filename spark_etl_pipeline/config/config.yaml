@@ -1,8 +1,8 @@
 etl:
   extract:
     input_files:
-      - "/Users/abhisheklucky/PycharmProjects/spark-etl-pipeline/spark_etl_pipeline/data/micro_user.csv"
-      - "/Users/abhisheklucky/PycharmProjects/spark-etl-pipeline/spark_etl_pipeline/data/stagnant_data.csv"
+      - "<path to data>/data/micro_user.csv"
+      - "<path to data>/data/stagnant_data.csv"
   transform:
     drop_na: true
     filter:
@@ -11,4 +11,4 @@ etl:
     rename_columns:
       name: "full_name"
   load:
-    output_file: "/Users/abhisheklucky/PycharmProjects/spark-etl-pipeline/spark_etl_pipeline/data/output.csv"
+    output_file: "<path to data>/data/output.csv"
